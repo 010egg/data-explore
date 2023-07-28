@@ -100,10 +100,10 @@ class DataExplorer:
             self.db_user = input("Enter the database user: ").strip()
             self.db_password = input("Enter the database password: ").strip()
         elif self.db_type == "greenplum":
-            self.db_host = '10.0.130.109'#input("Enter the database host: ").strip()
-            self.db_port = '5432'#input("Enter the database port: ").strip()
-            self.db_user = 'youdata'#input("Enter the database user: ").strip()
-            self.db_password = 'youdata@2023'#input("Enter the database password: ").strip()
+            self.db_host = input("Enter the database host: ").strip()
+            self.db_port = input("Enter the database port: ").strip()
+            self.db_user = input("Enter the database user: ").strip()
+            self.db_password = input("Enter the database password: ").strip()
         else:
             raise ValueError("Invalid database type.")
 
